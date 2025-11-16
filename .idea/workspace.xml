@@ -17,10 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02825320-1ed4-49a6-811e-7752020aaa37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/YashUppal/edgedetectionviewer/GLRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/YashUppal/edgedetectionviewer/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/YashUppal/edgedetectionviewer/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

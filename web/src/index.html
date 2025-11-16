@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Detection Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Real-Time Edge Detection Viewer</h1>
+
+    <div class="viewer-section">
+        <h2>Live Feed</h2>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+
+    <div class="stats-section">
+        <h2>Frame Statistics</h2>
+        <div class="stats">
+            <p><strong>Resolution:</strong> <span id="resolution">640x480</span></p>
+            <p><strong>FPS:</strong> <span id="fps">0</span></p>
+            <p><strong>Processing Time:</strong> <span id="processingTime">0ms</span></p>
+            <p><strong>Edge Detection Method:</strong> <span id="method">Canny (Threshold: 100-200)</span></p>
+        </div>
+    </div>
+</div>
+
+<script src="bundle.js"></script>
+</body>
+</html>
