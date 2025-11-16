@@ -29,10 +29,10 @@ A cross-platform Research & Development project:
 <!-- Insert these as ![](relative/path/to/your/screenshot.png) -->
 
 **Android App:**
-![Android GL Edge Detection Screenshot](screenshots/android-screenshot.jpg)
+![Android-Screenshot.png](Screenshots/Android-Screenshot.png)
 
 **Web App:**
-![Web Edge Detection Viewer](screenshots/web-screenshot.jpg)
+![Web-Screenshot.png](Screenshots/Web-Screenshot.png)
 
 ---
 
