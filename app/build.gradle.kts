@@ -6,9 +6,7 @@ plugins {
 
 android {
     namespace = "com.YashUppal.edgedetectionviewer"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.YashUppal.edgedetectionviewer"
@@ -29,17 +27,29 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
     kotlinOptions {
         jvmTarget = "11"
     }
+
     buildFeatures {
         compose = true
     }
+
+    externalNativeBuild {
+        cmake {
+            path = file("CMakeLists.txt")
+        }
+    }
+
+    ndkVersion = "26.1.10909125"
 }
+
 
 dependencies {
     implementation(libs.androidx.core.ktx)
