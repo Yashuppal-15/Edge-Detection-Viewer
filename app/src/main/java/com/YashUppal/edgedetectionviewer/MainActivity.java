@@ -1,5 +1,6 @@
 package com.YashUppal.edgedetectionviewer;
 
+import android.opengl.GLSurfaceView;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.graphics.SurfaceTexture;
@@ -29,6 +30,12 @@ public class MainActivity extends AppCompatActivity implements TextureView.Surfa
         textureView = findViewById(R.id.textureView);
         textureView.setSurfaceTextureListener(this);
 
+        // Initialize GL Surface View
+        GLSurfaceView glSurfaceView = findViewById(R.id.glSurfaceView);
+        glSurfaceView.setEGLContextClientVersion(2);
+        glSurfaceView.setRenderer(new GLRenderer());
+        glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -40,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements TextureView.Surfa
 
         Toast.makeText(this, stringFromJNI(), Toast.LENGTH_SHORT).show();
     }
+
 
     @Override
     public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
