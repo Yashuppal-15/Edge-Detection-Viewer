@@ -29,7 +29,7 @@ A cross-platform Research & Development project:
 <!-- Insert these as ![](relative/path/to/your/screenshot.png) -->
 
 **Android App:**
-![Android-Screenshot.png](Screenshots/Android-Screenshot.png)
+![Android Screenshot.jpg](Screenshots/Android%20Screenshot.jpg)
 
 **Web App:**
 ![Web-Screenshot.png](Screenshots/Web-Screenshot.png)
